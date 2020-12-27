@@ -1,0 +1,17 @@
+.form-control {
+    height: 50px;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border: 3px solid #007bff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0px;
+}
+
+.word {
+    font-size: 20px;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <%- include('./templates/head') %>
+    <body>
+        <div class="container">
+            <div class="p-3 mb-3" id="demo-div">
+                <% for(i=0;i<txt.length; ++i) { %>
+                    <div class="words-div p-1" style="display: inline-block;">
+                        <p class="word m-0"><%=  txt[i] %></p>
+                    </div>
+                <% } %>
+            </div>
+            <input class="form-control mb-5" type="text" placeholder="Type here to start test" maxlength="100">
+        </div>
+    </body>
+    <script src="/scripts/form.js"></script>
+</html>

@@ -1,17 +1,66 @@
+#rules-row {
+    margin-top: 100px;
+}
+
+#wpm-pic {
+    width: 700px;
+    height: 300px;
+}
+
+#twitter-widget-0 {
+    margin-left: 15px;
+}
+
 .form-control {
-    height: 50px;
-    font-size: 25px;
-    font-family: Roboto;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     border: none;
-    border: 3px solid #007bff;
+    border: 2px solid #007bff;
     border-left: none;
     border-right: none;
     border-top: none;
     border-radius: 0px;
+    box-shadow: none !important;
+    margin-top: 75px;
+    font-family: Courier;
 }
 
 .word {
     font-size: 20px;
+}
+
+.stats-span {
+    font-size: 25px;
+    font-family: Georgia;
+}
+
+.container {
+    min-width: 385px;
+}
+
+.nav-link {
+    font-size: 20px;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    border: 1px solid white;
+    background-color: white;
+}
+
+.navbar-brand {
+    font-family: Cambria;
+    margin-right: 50px;
+}
+
+.navbar {
+    min-width: 650px;
+}
+
+span#correct-points {
+    color: green;
+}
+
+span#incorrect-points {
+    color: red;
 }

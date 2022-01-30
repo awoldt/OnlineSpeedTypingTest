@@ -3,7 +3,8 @@
     <%- include('./templates/head') %>
     <body>
         <%- include('./templates/nav') %>
-        <div class="text-center" style="margin-top: 50px; margin-bottom: 50px;"> <a  href="https://typesnap.com">New and improved version!</a></div>
+     
+        
        
         <div class="container">
             <div class="row mt-3 mb-5" id="stats-row">
@@ -43,9 +44,15 @@
                 <% } %>
             </div>
             <input class="form-control m-3" type="text" placeholder="Type here to start test">
-            <div class="row" id="rules-row">
+
+            <div class="text-center btn btn-danger" style="margin-top: 50px; margin-bottom: 50px;"> <a  href="https://typesnap.com" style="text-decoration: none; color: white;">New and improved version!</a></div>
+
+
+            <div class="row" id="rules-row" >
+                <h1 class="text-center"><u>Speed Typing Test</u></h1>
+                <p class="text-center" style="margin-bottom: 50px;">Type as many words as possible before the timer runs out.</p>
                 <div class="col-4">
-                    <h4 class="text-center">Rules</h4>
+                    <h2 class="text-center">Rules</h2>
                     <p>You have one minute to spell every word that appears on the screen. As soon as a single character is typed into the textbox, the test will start. As you type, check at the stats above to see how many words you have spelled correctly. Incorrect points are tallied when one of the following occurs: </p>
                     <ul>
                         <li>Pressing spacebar before typing out the entire word</li>
@@ -54,19 +61,17 @@
                     </ul>
                 </div>
                 <div class="col-4">
-                    <h4 class="text-center">Benefits of Efficient Typing</h4>
+                    <h2 class="text-center">Benefits of Efficient Typing</h2>
                     <p>Learning to type with accuracy and efficiency will not only improve your work, but keep you more focused without having to look down constantly. Having to continuously look away from the screen can ruin one's train of thought. Making typing a skill that is almost second nature enables a person to perform their best work.</p>
                 </div>
                 <div class="col-4">
-                    <h4 class="text-center">How to improve your typing</h4>
+                    <h2 class="text-center">How to improve your typing</h2>
                     <p>Getting good at typing is a process and will not happen overnight. Remember that like anything else in life, practice makes perfect, and typing is no exception. First, get used to typing without looking down. This will keep you focused and overtime train your brain where specific keys are without having any visual cues. Do not stress over typing a word incorrectly. Learn from your mistakes and move on.</p>
                 </div>
-                <div class="col-12 mt-3">
-                    <h4 class="text-center">What is WPM</h4>
+                <div class="col-12 mt-3 mb-3">
+                    <h2 class="text-center">What is WPM</h2>
                     <p class="text-center">Words per Minute, or better known as WPM, is a unit of measurement relating to how fast a person can type. It is a simple calculation that takes the number of characters typed divided by 5, then dividing that by the number of minutes the test took place. A standard word is considered to have 5 characters in it. The average person typically scores anything between 30 and 40 WPM, with professionals scoring much higher. More information on WPM can be found <a href="https://www.keyhero.com/news6/">here</a>.</p>
-                    <div class="text-center">
-                        <img src="/imgs/wpm.png" class="img-fluid" alt="wpm formula" id="wpm-pic">
-                    </div>
+                  
                 </div>
             </div>
         </div>

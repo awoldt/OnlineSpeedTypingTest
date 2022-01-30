@@ -1,14 +1,15 @@
+require("dotenv").config();
+
 const express = require('express');
 const mobile = require('is-mobile');
-const port = 8080;
 const app = express();
 const generatedWords = require('random-word'); //word generator
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.listen(port, () => {
-    console.log('== server is running on port ' + port + ' ==');
+app.listen(process.env.PORT, () => {
+    console.log('== server is running on port ' + process.env.PORT + ' ==');
 });
 
 //home page

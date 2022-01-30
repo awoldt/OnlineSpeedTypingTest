@@ -3,7 +3,6 @@
     <%- include('./templates/head') %>
     <body>
         <%- include('./templates/nav') %>
-        <div class="text-center" style="margin-top: 50px; margin-bottom: 50px;"> <a  href="https://typesnap.com">New and improved version!</a></div>
         <div class="container text-center">
             <% for(i=0; i<txt.length; ++i) { %>
                 <p class="words" style="visibility: visible; display: inline-block; color: white;"><%= txt[i] %></p>
@@ -27,17 +26,13 @@
                     <span class="stats-span" id="incorrect-points">0</span>
                 </div>
             </div>
-            <div id="share-div">
-                <% if(shareBtnInNav == false) { %>
-                    <!-- Facebook share btn -->
-                    <div class="fb-share-button" data-href="https://www.onlinespeedtypingtest.com/" data-layout="button" data-size="large"></div>
-                    <!-- Twitter share btn -->
-                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Can you type 100 words in one minute?" data-size="large">Tweet</a>
-                <% } %>
-            </div>
+        
             <div class="row" id="rules-row">
+                <div class="text-center btn btn-danger" style="margin-top: 50px; margin-bottom: 50px;"> <a  href="https://typesnap.com" style="text-decoration: none; color: white;">New and improved version!</a></div>
+                <h1>Speed typing test</h1> 
+                <p>Type as many worst as possible before the timer runs out</p>
                 <div class="col-12 mb-5">
-                    <h4>Rules</h4>
+                    <h2>Rules</h2>
                     <p>You have one minute to spell every word that appears on the screen. As soon as a single character is typed into the textbox, the test will start. As you type, check at the stats above to see how many words you have spelled correctly. Incorrect points are tallied when one of the following occurs: </p>
                     <ul>
                         <li>Pressing spacebar before typing out the entire word</li>
@@ -46,15 +41,15 @@
                     </ul>
                 </div>
                 <div class="col-12 mb-5">
-                    <h4>Benefits of Efficient Typing</h4>
+                    <h2>Benefits of Efficient Typing</h2>
                     <p>Learning to type with accuracy and efficiency will not only improve your work, but keep you more focused without having to look down constantly. Having to continuously look away from the screen can ruin one's train of thought. Making typing a skill that is almost second nature enables a person to perform their best work. Remember that like anything else in life, practice makes perfect.</p>
                 </div>
                 <div class="col-12 mb-5">
-                    <h4>How to improve your typing</h4>
+                    <h2>How to improve your typing</h2>
                     <p>Getting good at typing is a process and will not happen overnight. Remember that like anything else in life, practice makes perfect, and typing is no exception. First, get used to typing without looking down. This will keep you focused and overtime train your brain where specific keys are without having any visual cues. Do not stress over typing a word incorrectly. Learn from your mistakes and move on.</p>
                 </div>
                 <div class="col-12">
-                    <h4 class="text-center">What is WPM</h4>
+                    <h2 class="text-center">What is WPM</h2>
                     <p class="text-center">Words per Minute, or better known as WPM, is a unit of measurement relating to how fast a person can type. It is a simple calculation that takes the number of characters typed divided by 5, then dividing that by the number of minutes the test took place. A standard word is considered to have 5 characters in it. The average person typically scores anything between 30 and 40 WPM, with professionals scoring much higher. More information on WPM can be found <a href="https://www.keyhero.com/news6/">here</a>.</p>
                     <span><i>WPM = (Characters typed/5)/Minutes</i></span>
                 </div>

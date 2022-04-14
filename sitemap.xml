@@ -7,7 +7,12 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
     <loc>https://www.onlinespeedtypingtest.com/</loc>
-    <lastmod>2022-03-22</lastmod>
+    <lastmod>2022-04-14</lastmod>
     <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://www.onlinespeedtypingtest.com/privacy</loc>
+    <lastmod>2022-04-14</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>

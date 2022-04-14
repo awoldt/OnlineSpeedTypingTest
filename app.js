@@ -47,13 +47,8 @@ app.get("/", (req, res) => {
 
 //privacy
 app.get("/privacy", (req, res) => {
-  res.setHeader("X-Robots-Tag", "noindex");
-  res.render("privacy", {
-    title: "Privacy Policy",
-    description:
-      "Privacy policy. Please read and consider these policies before using this website.",
-    style: null,
-  });
+  res.status(200);
+  res.sendFile(__dirname + '/privacy.html')
 });
 
 //sitemap.xml

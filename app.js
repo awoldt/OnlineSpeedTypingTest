@@ -8,8 +8,8 @@ const generatedWords = require("random-word"); //word generator
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-app.listen(process.env.PORT, () => {
-  console.log("== server is running on port " + process.env.PORT + " ==");
+app.listen(8080, () => {
+  console.log("== server is running on port 8080 ==");
 });
 
 //home page

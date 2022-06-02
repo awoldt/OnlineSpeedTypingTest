@@ -51,15 +51,6 @@ app.get("/privacy", (req, res) => {
   res.sendFile(__dirname + '/privacy.html')
 });
 
-//sitemap.xml
-app.get("/sitemap.xml", (req, res) => {
-  res.sendFile(__dirname + "/sitemap.xml", (err) => {
-    if (err) {
-      res.send(err);
-    }
-  });
-});
-
 //404
 app.use((req, res) => {
   res.status(404);

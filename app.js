@@ -52,7 +52,7 @@ app.get("/privacy", (req, res) => {
 });
 
 app.get("/best-keyboards-2022", (req, res) => {
-  res.status(200).sendFile(__dirname + "/bestKeyboards2022.html");
+  res.status(200).render('bestKeyboards2022');
 });
 
 //404

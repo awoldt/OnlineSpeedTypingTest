@@ -49,10 +49,6 @@ app.get("/privacy", (req, res) => {
   res.sendFile(__dirname + "/privacy.html");
 });
 
-app.get("/best-keyboards-2022", (req, res) => {
-  res.status(200).render('bestKeyboards2022');
-});
-
 //404
 app.use((req, res) => {
   res.status(404);

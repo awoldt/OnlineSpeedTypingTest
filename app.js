@@ -26,8 +26,6 @@ app.get("/", (req, res) => {
         "Sharpen your typing skills. Compete with friends to see who can get the highest WPM score. Optimised for both desktop and mobile devices, practice typing wherever.",
       style: "styles-m.css",
       txt: words,
-      shareBtnInNav: false,
-      mobile: true,
     });
   }
   //desktop device
@@ -38,15 +36,8 @@ app.get("/", (req, res) => {
         "Sharpen your typing skills. Compete with friends to see who can get the highest WPM score. Optimised for both desktop and mobile devices, practice typing wherever.",
       style: "styles.css",
       txt: words,
-      shareBtnInNav: true,
     });
   }
-});
-
-//privacy
-app.get("/privacy", (req, res) => {
-  res.status(200);
-  res.sendFile(__dirname + "/privacy.html");
 });
 
 //404
